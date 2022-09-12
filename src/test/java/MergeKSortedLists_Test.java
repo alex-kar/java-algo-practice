@@ -1,9 +1,7 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class AppTest {
+class MergeKSortedLists_Test {
 
     // https://leetcode.com/problems/merge-k-sorted-lists/
     @Test
@@ -27,7 +25,7 @@ class AppTest {
         node1 = new ListNode(2, node2);
         array[2] = node1;
 
-        ListNode result = new Solution().mergeKLists(array);
+        ListNode result = new MergeKSortedLists().mergeKLists(array);
 
         Assertions.assertEquals(1, result.val);
         Assertions.assertEquals(1, result.next.val);
@@ -43,7 +41,7 @@ class AppTest {
     public void test2() {
         ListNode[] array = new ListNode[0];
 
-        ListNode result = new Solution().mergeKLists(array);
+        ListNode result = new MergeKSortedLists().mergeKLists(array);
 
         Assertions.assertNull(result);
     }
@@ -53,7 +51,7 @@ class AppTest {
         ListNode[] array = new ListNode[1];
         array[0] = null;
 
-        ListNode result = new Solution().mergeKLists(array);
+        ListNode result = new MergeKSortedLists().mergeKLists(array);
 
         Assertions.assertNull(result);
     }

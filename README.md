@@ -6,8 +6,11 @@ Run tests for all algorithms
 ```
 mvn test
 ```
-
 Run test for specific algorithm  
 ```
 mvn test -Dtest=<algorithm_test_class>
+```
+Examples  
+```
+mvn test -Dtest=MergeKSortedLists_Test
 ```
