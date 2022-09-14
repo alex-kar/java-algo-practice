@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 // https://leetcode.com/problems/reverse-linked-list/
-class ReverseLinkedListTest {
+class ReverseLinkedList_Test {
 
     @Test
     public void test1() {
