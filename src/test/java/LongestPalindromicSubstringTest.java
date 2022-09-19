@@ -7,7 +7,7 @@ class LongestPalindromicSubstringTest {
 
     @Test
     public void test1() {
-        assertEquals("aba", test.longestPalindrome("babad"));
+        assertEquals("bab", test.longestPalindrome("babad"));
     }
 
     @Test
