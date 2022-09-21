@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -49,6 +50,6 @@ class BinaryTreeLevelOrderTraversalTest {
 
     @Test
     public void test2() {
-        assertNull(new BinaryTreeLevelOrderTraversal().levelOrder(null));
+        assertEquals(Collections.emptyList(), new BinaryTreeLevelOrderTraversal().levelOrder(null));
     }
 }
