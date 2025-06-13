@@ -10,8 +10,9 @@ class ReverseStringTest {
             "hello, olleh",
             "Hannah, hannaH"
     })
-    public void reverseTest(String str, String expected) {
-        new ReverseString().reverseString(str.toCharArray());
-        Assertions.assertEquals(expected, str, String.format("Expected %s -> %s", str, expected));
+    public void reverseTest(String value, String expected) {
+        char[] str = value.toCharArray();
+        new ReverseString().reverseString(str);
+        Assertions.assertEquals(expected, new String(str), String.format("Expected %s -> %s", new String(str), expected));
     }
 }
